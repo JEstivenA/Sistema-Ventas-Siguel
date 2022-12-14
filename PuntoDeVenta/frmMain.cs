@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraBars;
+using PuntoDeVenta.Ventanas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -51,7 +52,17 @@ namespace PuntoDeVenta
 
         private void accordionControlElement1_Click(object sender, EventArgs e)
         {
+            abrirFormHijo(new Venta());
+        }
 
+        private void accordionControlElement5_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new Proveedores());
+        }
+
+        private void accordionControlElement6_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new Compra());
         }
     }
 }

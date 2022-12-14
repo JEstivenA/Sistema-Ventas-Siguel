@@ -45,12 +45,16 @@
             this.txtProveedor = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.txtCantidad = new DevExpress.XtraEditors.TextEdit();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.txtProducto.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtProveedor.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCantidad.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // simpleButton2
@@ -65,7 +69,7 @@
             this.simpleButton2.AppearanceHovered.Options.UseBackColor = true;
             this.simpleButton2.AppearanceHovered.Options.UseFont = true;
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(739, 206);
+            this.simpleButton2.Location = new System.Drawing.Point(814, 206);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(171, 38);
             this.simpleButton2.TabIndex = 20;
@@ -83,7 +87,7 @@
             this.simpleButton1.AppearanceHovered.Options.UseBackColor = true;
             this.simpleButton1.AppearanceHovered.Options.UseFont = true;
             this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.simpleButton1.Location = new System.Drawing.Point(840, 125);
+            this.simpleButton1.Location = new System.Drawing.Point(915, 125);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(164, 38);
             this.simpleButton1.TabIndex = 19;
@@ -101,7 +105,7 @@
             this.btnGuardar.AppearanceHovered.Options.UseBackColor = true;
             this.btnGuardar.AppearanceHovered.Options.UseFont = true;
             this.btnGuardar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnGuardar.ImageOptions.SvgImage")));
-            this.btnGuardar.Location = new System.Drawing.Point(650, 125);
+            this.btnGuardar.Location = new System.Drawing.Point(725, 125);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(159, 38);
             this.btnGuardar.TabIndex = 18;
@@ -147,7 +151,7 @@
             this.txtProducto.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.txtProducto.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
             this.txtProducto.Properties.MaskSettings.Set("mask", "d");
-            this.txtProducto.Size = new System.Drawing.Size(250, 26);
+            this.txtProducto.Size = new System.Drawing.Size(325, 26);
             this.txtProducto.TabIndex = 21;
             // 
             // labelControl3
@@ -174,7 +178,7 @@
             this.txtNombre.Properties.Appearance.Options.UseFont = true;
             this.txtNombre.Properties.AppearanceFocused.BackColor = System.Drawing.Color.White;
             this.txtNombre.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtNombre.Size = new System.Drawing.Size(250, 26);
+            this.txtNombre.Size = new System.Drawing.Size(325, 26);
             this.txtNombre.TabIndex = 24;
             // 
             // labelControl4
@@ -201,7 +205,7 @@
             this.textEdit1.Properties.Appearance.Options.UseFont = true;
             this.textEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.White;
             this.textEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.textEdit1.Size = new System.Drawing.Size(250, 26);
+            this.textEdit1.Size = new System.Drawing.Size(325, 26);
             this.textEdit1.TabIndex = 26;
             // 
             // labelControl5
@@ -231,7 +235,7 @@
             this.textEdit2.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.textEdit2.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
             this.textEdit2.Properties.MaskSettings.Set("mask", "n");
-            this.textEdit2.Size = new System.Drawing.Size(250, 26);
+            this.textEdit2.Size = new System.Drawing.Size(325, 26);
             this.textEdit2.TabIndex = 28;
             // 
             // labelControl6
@@ -258,7 +262,7 @@
             this.txtProveedor.Properties.Appearance.Options.UseFont = true;
             this.txtProveedor.Properties.AppearanceFocused.BackColor = System.Drawing.Color.White;
             this.txtProveedor.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtProveedor.Size = new System.Drawing.Size(250, 26);
+            this.txtProveedor.Size = new System.Drawing.Size(325, 26);
             this.txtProveedor.TabIndex = 30;
             // 
             // labelControl7
@@ -288,14 +292,50 @@
             this.txtCantidad.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.txtCantidad.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
             this.txtCantidad.Properties.MaskSettings.Set("mask", "d");
-            this.txtCantidad.Size = new System.Drawing.Size(250, 26);
+            this.txtCantidad.Size = new System.Drawing.Size(325, 26);
             this.txtCantidad.TabIndex = 32;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControl1.Location = new System.Drawing.Point(12, 372);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(1132, 274);
+            this.gridControl1.TabIndex = 34;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.Appearance.FocusedCell.BackColor = System.Drawing.Color.Lime;
+            this.gridView1.Appearance.FocusedCell.Options.UseBackColor = true;
+            this.gridView1.Appearance.GroupRow.BackColor = System.Drawing.Color.White;
+            this.gridView1.Appearance.GroupRow.Options.UseBackColor = true;
+            this.gridView1.Appearance.HeaderPanel.BackColor = System.Drawing.Color.White;
+            this.gridView1.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.Salmon;
+            this.gridView1.Appearance.Row.BackColor2 = System.Drawing.Color.White;
+            this.gridView1.Appearance.Row.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridView1.Appearance.Row.Options.UseBackColor = true;
+            this.gridView1.Appearance.Row.Options.UseFont = true;
+            this.gridView1.Appearance.RowSeparator.BackColor = System.Drawing.Color.White;
+            this.gridView1.Appearance.RowSeparator.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridView1.Appearance.RowSeparator.Options.UseBackColor = true;
+            this.gridView1.Appearance.RowSeparator.Options.UseFont = true;
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.PaintStyleName = "Flat";
             // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1081, 658);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1156, 658);
+            this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.labelControl7);
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.labelControl6);
@@ -322,6 +362,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtProveedor.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCantidad.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,5 +387,7 @@
         private DevExpress.XtraEditors.TextEdit txtProveedor;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.TextEdit txtCantidad;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     }
 }
